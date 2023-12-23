@@ -50,7 +50,7 @@ RUN wget https://dl.google.com/go/go1.21.4.linux-amd64.tar.gz && \
 ENV PATH "${PATH}:/usr/local/go/bin"
 
 # Fix for 6700XT - https://github.com/RadeonOpenCompute/ROCm/issues/1756#issuecomment-1160386571
-ENV HSA_OVERRIDE_GFX_VERSION=10.3.0
+# ENV HSA_OVERRIDE_GFX_VERSION=10.3.0
 
 RUN git clone https://github.com/CNugteren/CLBlast.git && \
   cd CLBlast && \
